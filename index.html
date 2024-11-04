@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidushi Tiwari</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <h1>Vidushi Tiwari</h1>
+      <p>Fashion Model | Portfolio</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Welcome to my digital portfolio. I'm a professional model , photographer with a passion for fashion, lifestyle, and skincare. Below you can explore a collection of my work from various shoots.</p>
+  </section>
+
+
+  <!-- Digital Library Section -->
+  <section class="library">
+    <h2>Digital Library</h2>
+    <div class="gallery">
+      <div class="gallery-item" onclick="openLightbox('shoot1')">
+        <img src="1.jpg" alt="Shoot 1">
+        <p>Shoot 1: Summer Collection</p>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('shoot2')">
+        <img src="d.jpeg" alt="Shoot 2">
+        <p>Shoot 2: Urban Fashion</p>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('shoot3')">
+        <img src="u.jpg" alt="Shoot 3">
+        <p>Shoot 3: Beach Vibes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content" id="lightbox-content">
+      <img id="lightbox-img" src="" alt="Gallery Image">
+      <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+      <span class="next" onclick="changeSlide(1)">&#10095;</span>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to work with me or inquire about collaborations, please reach out via the contact form below.</p>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Vidushi Tiwari . All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
