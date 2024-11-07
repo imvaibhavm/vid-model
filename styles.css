@@ -165,7 +165,8 @@ footer {
 
 .lightbox img {
   width: 100%;
-  height: auto;
+  height: 500px;
+  overflow: scroll;
   display: block;
   margin: 0 auto;
   border-radius: 8px;
